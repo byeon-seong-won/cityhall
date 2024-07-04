@@ -74,7 +74,7 @@
 }
 .side-bar .ico-search {
   margin-bottom: 12px;
-  background: #df142a url(/assets/images/ico-sideSearch.png) no-repeat center;
+  background: #df142a url(../images/ico-sideSearch.png) no-repeat center;
 }
 .side-bar .ico-top {
   padding-top: 14px;
