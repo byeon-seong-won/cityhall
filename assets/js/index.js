@@ -193,6 +193,7 @@
     slidesPerView:"auto",
     effect: 'fade',
     fadeEffect: { crossFade: true }, 
+    autoHeight : true,
     observer: true,
     observeParents: true,
     allowTouchMove:false,

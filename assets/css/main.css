@@ -1303,6 +1303,12 @@
 .sc-field .cont-area .board-right li:nth-child(5) a {
   border: 1px solid #b491b9; 
 }
+.sc-field .cont-area .board-right li a .logo-pc {
+  display: block;
+}
+.sc-field .cont-area .board-right li a .logo-mo {
+  display: none;
+}
 .sc-field .img-area {
   position: absolute;
   width: 219px;
@@ -2236,6 +2242,8 @@
     left: 30px;
   }
 
+ 
+
 }
 
 
@@ -2293,11 +2301,22 @@
     padding: 0 10px;
     font-size: 17px;
   }
+  .sc-field .cont-area .board-right li a {
+    padding: 12px 20px;
+  }
+  .sc-field .cont-area .board-right li a img {
+    height: 100%;
+  }
+  .sc-field .cont-area .board-right li a .logo-pc {
+    display: none;
+  }
+  .sc-field .cont-area .board-right li a .logo-mo {
+    display: block;
+  }
   .sc-field .cont-area .board, 
   .sc-field .cont-area .board-left {
     flex-direction: column;
   }
-
   .sc-field .cont-area .board-right {
     width: 100%;
     flex-wrap: nowrap;
@@ -2334,10 +2353,10 @@
   .sc-month .group-subscr .btn-item a {
     padding: 10px 18px;
   }
-
   .sc-story .gallery-list {
     flex-direction: column;
   }
+
 }
 
 
