@@ -1,0 +1,20 @@
+*{margin:0;padding:0;font:inherit;color:inherit;}
+*, :after, :before {box-sizing:border-box;}
+html, body {height:100%;}
+img, picture, video, canvas, svg {display: block;max-width:100%;}
+button {background:none;border:0;cursor:pointer;}
+a {text-decoration:none}
+table {border-collapse:collapse;border-spacing:0}
+ul {list-style: none;}
+fieldset, input {border: 0;}
+
+
+
+body {
+  font-size: 16px;
+  color: #3d3d3d;
+  line-height: 23px;
+  word-break: keep-all;
+  letter-spacing: -0.03em;
+  font-family: 'Pretendard', Nanum Gothic, '나눔고딕', Malgun gothic, '맑은고딕', Dotum, '돋움', 'AppleSDGothicNeo', arial, sans-serif;
+}
