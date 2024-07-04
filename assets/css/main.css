@@ -2013,6 +2013,23 @@
     flex-direction: column;
   }
 
+
+  .sc-field .cont-slide {
+    height: 100%;
+  }
+  .sc-field .cont-area .board-right {
+    width: 270px;
+  }
+  .sc-field .cont-area .board-right li {
+    height: 150px;
+  }
+
+  .sc-field .cont-area .board-right li:nth-child(3), .sc-field .cont-area .board-right li:nth-child(4), .sc-field .cont-area .board-right li:nth-child(5) {
+    margin-top: 10px;
+  }
+
+
+
 }
 
 
@@ -2070,9 +2087,8 @@
     padding: 0 15px;
   }
 
-  .sc-field .cont-area .board-right {
-    width: 270px;
-  }
+
+
 
 }
 
@@ -2213,9 +2229,6 @@
     height: 235px;
   }
 
-
-
-
   .sc-field .group-field .cont-area {
     padding: 20px 15px;
   }
@@ -2239,13 +2252,6 @@
   .sc-banner .banner-wrap {
     width: 100%;
   }
-
-
-  .sc-field .cont-area .board-right li:nth-child(3), .sc-field .cont-area .board-right li:nth-child(4), .sc-field .cont-area .board-right li:nth-child(5) {
-    margin-top: 15px;
-  }
-
-
 
 
 }
@@ -2302,7 +2308,194 @@
   .sc-visual {
     height: 75vw;
   }
+  .sc-board .main_board_wrap .control {
+    display: none;
+  }
 
+  .sc-board .news-slide .swiper-slide {
+    width: 200px !important;
+    margin-right: 20px !important;
+  }
+
+  .sc-board .main_board_wrap .newTit {
+    font-size: 16px;
+  }
+  .sc-board .title {
+    font-size: 17px;
+  }
+  .header-search .search-area .keyword-box .title::before {
+    top: 10px;
+  }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 550px) {
+
+
+  .wrapper2 > section.sc-broad, .wrapper2 > section.sc-notice {
+    padding-top: 40px;
+  } 
+
+  .sc-story .gallery-list {
+    flex-direction: column;
+  }
+
+  .wrapper2 {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  } 
+
+  .sc-broad, .sc-notice {
+    width: 100%;
+  }
+
+  .sc-field .img-area {
+    display: none;
+  }
+  .sc-field .cont-area .board, .sc-field .cont-area .board-left {
+    flex-direction: column;
+  }
+
+  .sc-field .group-field .tab-item a {
+    padding: 0 10px;
+    font-size: 17px;
+  }
+  .sc-field .cont-area .board-right {
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .sc-field .cont-area .board-right li,
+  .sc-field .cont-area .board-right li:nth-child(3), .sc-field .cont-area .board-right li:nth-child(4), 
+  .sc-field .cont-area .board-right li:nth-child(5) {
+    height: 65px;
+    width: 100%;
+  }
+
+  .sc-field .cont-area .board-right li+li {
+    margin: 10px 0 0;
+  }
+
+  .sc-sns .top-area .sns-list {
+    gap: 5px;
+  }
+
+  .sc-sns .swiper .swiper-slide {
+    width: 200px !important;
+    margin-right: 15px !important;
+  }
+
+  .sc-sns .swiper-cont {
+    height: 320px;
+  }
+
+  .sc-month .group-subscr .btn-list {
+    flex-direction: column;
+    width: 225px;
+    margin: 20px auto;
+  }
+  .sc-month .group-subscr .btn-list li {
+    width: 100%;
+  }
+  .sc-month .group-subscr .btn-item a {
+    padding: 10px 18px;
+  }
+
+
+  .sc-service .headline {
+    text-align: center;
+  }
+
+  .sc-service .btn-more {
+    position: relative;
+    top: 0;
+    margin: 0 auto;
+  }
+  .sc-service .service-cont {
+    flex-direction: column;
+  }
+
+  .sc-service .serv-list li {
+    display: inline-block;
+    width: 80px;
+    margin: 0 10px 15px;
+  }
+
+  .sc-service .serv-list.active {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  .sc-service .serv-list .info-area p {
+    font-size: 15px;
+  }
+
+  .sc-service .serv-item:nth-child(8) {
+    margin-right: 0;
+  }
+
+ 
+
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 450px) {
+
+  .wrapper1-wrap {
+    margin-top: 380px;
+  }
+  .sc-mayor {
+    padding-bottom: 0;
+  }
+  .sc-mayor .img-box {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 214px;
+    position: relative;
+  }
+  .sc-mayor .group-top img {
+    margin: 0 auto;
+  }
+  .sc-mayor .group-cont .info-box {
+    text-align: center;
+  }
+
+  .sc-mayor .group-cont {
+    align-items: center;
+  }
+
+  .sc-mayor .group-cont .btn-box {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-bottom: 25px;
+  }
+  .sc-mayor .group-cont .btn-box li+li {
+    margin: 0 0 0 8px;
+  }
+  .sc-mayor::before {
+    bottom: 10px;
+    left: -25px;
+  }
+  .sc-mayor::after {
+    top: 50px;
+    right: 20px;
+    left: auto;
+  }
 
 
 

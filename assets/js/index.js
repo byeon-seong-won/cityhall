@@ -131,6 +131,8 @@ document.getElementById('m-play').addEventListener('click', function() {
           allowTouchMove:false,
         },
       },
+      observer: true,
+      observeParents: true,
       navigation: {
         nextEl: tab.querySelector('.navi-next'),
         prevEl: tab.querySelector('.navi-prev'),
@@ -171,9 +173,6 @@ var noticeSlide = new Swiper('.sc-notice .notice-slide', {
     delay : 2000,
     disableOnInteraction: false,
   },
-  freeMode: true,
-  observer: true,
-  observeParents: true,
   navigation: {
     nextEl: ".sc-notice .navi-next",
     prevEl: ".sc-notice .navi-prev",
@@ -231,7 +230,7 @@ var sertabSlide = new Swiper('.sc-field .tab-slide', {
 var sercontSlide = new Swiper('.sc-field .cont-slide', {
   slidesPerView:"auto",
   effect: 'fade',
-  freeMode: true,
+  fadeEffect: { crossFade: true }, 
   observer: true,
   observeParents: true,
   allowTouchMove:false,
