@@ -91,6 +91,16 @@
   font-weight: 500;
   line-height: 10px;
 }
+.side-bar .ico-top i::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-right: 4px solid transparent;
+  border-bottom: 3px solid #fff;
+  border-left: 4px solid transparent;
+  transform: translateX(-50%);
+}
 
 
 
@@ -123,8 +133,6 @@
 .side-bar .side-bar-list li:hover {
   transform: rotate(45deg);
 }
-
-
 .side-bar-list.scroll {
   display: none;
 }
@@ -136,6 +144,8 @@
     padding: 0 60px 0 30px;
   }
 }
+
+
 
 @media screen and (max-width: 1280px) {
   #main-wrap  {

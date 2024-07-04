@@ -800,6 +800,22 @@
 @media screen and (max-width: 768px) {
 
 
+
+  .header-search .search-area form {
+    max-width: none;
+  }
+  .header-search .search-area {
+    align-items: start;
+  }
+  .header-search .search-area .key-list {
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 0;
+  }
+  .header-search .search-area .keyword-box .title::before {
+    top: 10px;
+  }
+
   .group-info {
     text-align: center;
   }
