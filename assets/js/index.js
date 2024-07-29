@@ -23,16 +23,35 @@
 
   // top 버튼 클릭시
   $('.ico-top').click(function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'smooth'});
   })
 
 
+
+
+
+
   // 서브메뉴
-  // $('.gnb-item').hover(function() {
-  //   $('.sub').addClass('on');
-  // }, function() {
-  //   $('.sub').removeClass('on');
-  // })
+  $('.gnb-item').hover(function() {
+    $('#header').addClass('on');
+    $(this).siblings().find('.gnb-sub').stop().slideUp(0);
+    $(this).find('.gnb-sub').stop().slideDown(500);
+  }, function() {
+      $('.gnb-sub').stop().slideUp(100);
+      $('#header').removeClass('on');
+  });
+
+
+  // $('.gnb-item').on('mouseenter focus', function() {
+  //   $('#header').addClass('on');
+  //   $(this).siblings().find('.gnb-sub').stop().slideUp(0);
+  //   $(this).find('.gnb-sub').stop().slideDown(500);
+  // });
+  // $('.gnb-item').on('mouseleave blur', function() {
+  //   $('.gnb-sub').stop().slideUp(100);
+  //   $('#header').removeClass('on');
+  // });
+
 
 
 
