@@ -1,14 +1,5 @@
 
 
-  // 브라우저 resize 처리
-  // window.addEventListener('resize', function() {
-  //   window.location.reload();
-  // });
-
-
-
-
-
   // 스크롤 시 side-bar
   let lastScroll = 0;
   $(window).scroll(function(){
@@ -28,6 +19,24 @@
 
 
 
+  // 유틸영역 클릭시
+  $('#header .header-util .cont').click(function() {
+    var $this = $(this);
+    var $ul = $this.find('ul');
+
+    // 다른 모든 ul을 slideUp
+    $('#header .header-util .cont').not($this).find('ul').stop().slideUp(200);
+    // 모든 .cont 요소에서 active 클래스를 제거
+    $('#header .header-util .cont').not($this).removeClass('active');
+    
+    if ($this.hasClass('active')) {
+        $this.removeClass('active');
+        $ul.stop().slideUp(200);
+    } else {
+        $this.addClass('active');
+        $ul.stop().slideDown(200);
+    }
+  });
 
 
 
@@ -42,20 +51,6 @@
   });
 
 
-  // $('.gnb-item').on('mouseenter focus', function() {
-  //   $('#header').addClass('on');
-  //   $(this).siblings().find('.gnb-sub').stop().slideUp(0);
-  //   $(this).find('.gnb-sub').stop().slideDown(500);
-  // });
-  // $('.gnb-item').on('mouseleave blur', function() {
-  //   $('.gnb-sub').stop().slideUp(100);
-  //   $('#header').removeClass('on');
-  // });
-
-
-
-
-
 
 
   // sc-visual
@@ -64,7 +59,7 @@
     effect: 'fade',
     loop:true,
     autoplay : {
-      delay : 1000,
+      delay : 3000,
       disableOnInteraction: false,
     },
     observer: true,
