@@ -252,6 +252,38 @@
   background-image: url(../images/ico-bg-04.png);
 }
 
+#header .gnb-sub.sub05 .depth2-list::before,
+#header .gnb-sub.sub05 .depth2-list .depth2-item > a  {
+  background: #1f96a1;
+}
+#header .gnb-sub.sub05 .depth2-tit {
+  background-color: #f1f7f8;
+  background-image: url(../images/ico-bg-05.png);
+}
+
+#header .gnb-sub.sub06 .depth2-list::before,
+#header .gnb-sub.sub06 .depth2-list .depth2-item > a  {
+  background: #d18415;
+}
+#header .gnb-sub.sub06 .depth2-tit {
+  background-color: #f1f7f8;
+  background-image: url(../images/ico-bg-06.png);
+}
+
+#header .gnb-sub.sub07 .depth2-list::before,
+#header .gnb-sub.sub07 .depth2-list .depth2-item > a  {
+  background: #7659a1;
+}
+#header .gnb-sub.sub07 .depth2-tit {
+  background-color: #f3f0f8;
+  background-image: url(../images/ico-bg-07.png);
+}
+
+
+
+
+
+
 
 
 
