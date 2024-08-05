@@ -44,6 +44,11 @@
   width: 199px;
   height: 41px;
 }
+#header #logo > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 #header #gnb {
   height: 100%;
 }
@@ -345,7 +350,6 @@
 }
 
 
-
 #header .header-util .inner .weather-item {
   display: flex;
   gap: 15px;
@@ -501,29 +505,22 @@
 }
 #header .header-util .sns .sns-item.sns02 i:before {
   background: url(../images/ico-util-blog.png);
-
 }
 #header .header-util .sns .sns-item.sns03 i:before {
   background: url(../images/ico-util-facebook.png);
-
 }
 #header .header-util .sns .sns-item.sns04 i:before {
   background: url(../images/ico-util-insta.png);
-
 }
 #header .header-util .sns .sns-item.sns05 i:before {
   background: url(../images/ico-util-kakao.png);
-
 }
 #header .header-util .sns .sns-item.sns06 i:before {
   background: url(../images/ico-util-x.png);
-
 }
 #header .header-util .sns .sns-item.sns07 i:before {
   background: url(../images/ico-util-band.png);
-
 }
-
 
 
 
@@ -851,10 +848,10 @@
 
 
 @media screen and (max-width: 1400px) {
-  #header #gnb ul li {
+  #header #gnb .gnb-list li {
     font-size: 19px;
   }
-  #header #gnb ul {
+  #header #gnb .gnb-list {
     gap: 40px;
   }
 
@@ -1070,36 +1067,16 @@
     width: 45px;
     height: 45px;
   }
-
-
-
 }
-
-
-
-
-@media screen and (max-width: 1024px) {
- 
-
-}
-
-
-
 
 
 
 
 @media screen and (max-width: 768px) {
-
-
-
  
   #footer .footer-header .link-item a {
     justify-content: start;
   }
-
-
-
 
 }
 
@@ -1109,8 +1086,6 @@
 
 /* 모바일  820px~320px */
 @media screen and (max-width: 768px) {
-
-
 
   .header-search .search-area form {
     max-width: none;
