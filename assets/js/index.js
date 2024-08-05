@@ -1,28 +1,6 @@
 
 
 
-  // tab Focus event
-  $('.gnb-item > a').focusin(function() {
-    $('#header').addClass('on');
-    $(this).siblings('.gnb-sub').stop().slideDown(500);
-  });
-
-  $('.gnb-item').focusout(function() {
-      var _this = $(this);
-      setTimeout(function() {
-          if (!_this.find('a').is(':focus')) {
-            _this.find('.gnb-sub').stop().slideUp(100);
-            $('#header').removeClass('on');
-          }
-      }, 100);
-  });
-
-
-
-
-
-
-
   // 스크롤 시 side-bar
   let lastScroll = 0;
   $(window).scroll(function(){
@@ -72,6 +50,25 @@
       $('.gnb-sub').stop().slideUp(100);
       $('#header').removeClass('on');
   });
+
+  
+  // tab Focus event
+  $('.gnb-item > a').focusin(function() {
+    $('#header').addClass('on');
+    $(this).siblings('.gnb-sub').stop().slideDown(500);
+  });
+
+  $('.gnb-item').focusout(function() {
+      var _this = $(this);
+      setTimeout(function() {
+          if (!_this.find('a').is(':focus')) {
+            _this.find('.gnb-sub').stop().slideUp(100);
+            $('#header').removeClass('on');
+          }
+      }, 100);
+  });
+
+
 
 
 
